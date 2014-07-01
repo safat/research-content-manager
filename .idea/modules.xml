@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/research-content-manager.iml" filepath="$PROJECT_DIR$/research-content-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/research-content-manger-ejb/research-content-manger-ejb.iml" filepath="$PROJECT_DIR$/research-content-manger-ejb/research-content-manger-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ressearch-content-manger-war/ressearch-content-manger-war.iml" filepath="$PROJECT_DIR$/ressearch-content-manger-war/ressearch-content-manger-war.iml" />
+    </modules>
+  </component>
+</project>
+

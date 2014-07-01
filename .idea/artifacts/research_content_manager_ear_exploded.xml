@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="research-content-manager:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/research_content_manager_ear_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="research-content-manager/javaeeApplication/javaEEApplication" />
+      <element id="module-output" name="research-content-manager" />
+      <element id="module-output" name="research-content-manger-ejb" />
+      <element id="javaee-facet-resources" facet="research-content-manger-ejb/ejb/EJB" />
+      <element id="module-output" name="ressearch-content-manger-war" />
+      <element id="javaee-facet-resources" facet="ressearch-content-manger-war/web/Web" />
+    </root>
+  </artifact>
+</component>

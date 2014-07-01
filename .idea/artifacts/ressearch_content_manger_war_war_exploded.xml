@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ressearch-content-manger-war:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ressearch_content_manger_war_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ressearch-content-manger-war/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ressearch-content-manger-war" />
+          <element id="module-output" name="research-content-manger-ejb" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Java EE 6-Java EE 6" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
