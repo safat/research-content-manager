@@ -1,0 +1,3 @@
+include 'research-content-manager-app',
+        'research-content-manger-ejb',
+         'ressearch-content-manger-war'
