@@ -4,10 +4,10 @@
     <root id="root">
       <element id="javaee-facet-resources" facet="research-content-manager/javaeeApplication/javaEEApplication" />
       <element id="module-output" name="research-content-manager" />
-      <element id="module-output" name="research-content-manger-ejb" />
-      <element id="javaee-facet-resources" facet="research-content-manger-ejb/ejb/EJB" />
-      <element id="module-output" name="ressearch-content-manger-war" />
-      <element id="javaee-facet-resources" facet="ressearch-content-manger-war/web/Web" />
+      <element id="module-output" name="research-content-manager-ejb" />
+      <element id="javaee-facet-resources" facet="research-content-manager-ejb/ejb/EJB" />
+      <element id="module-output" name="research-content-manager-war" />
+      <element id="javaee-facet-resources" facet="research-content-manager-war/web/Web" />
     </root>
   </artifact>
 </component>

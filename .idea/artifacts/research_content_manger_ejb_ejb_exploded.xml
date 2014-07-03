@@ -2,8 +2,8 @@
   <artifact type="exploded-ejb" name="research-content-manger-ejb:ejb exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/research_content_manger_ejb_ejb_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="research-content-manger-ejb/ejb/EJB" />
-      <element id="module-output" name="research-content-manger-ejb" />
+      <element id="javaee-facet-resources" facet="research-content-manager-ejb/ejb/EJB" />
+      <element id="module-output" name="research-content-manager-ejb" />
     </root>
   </artifact>
 </component>
