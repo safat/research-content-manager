@@ -1,6 +1,6 @@
 package net.therap.service;
 
-import net.therap.dao.UserDao;
+import net.therap.dao.StudentDao;
 import net.therap.domain.User;
 
 import javax.ejb.EJB;
@@ -18,18 +18,23 @@ import java.util.List;
 @Stateless
 public class UserService {
     @EJB
-    UserDao userDao;
+    StudentDao studentDao;
 
     public List<User> getUserList() {
-        return userDao.getUserList();
+        return studentDao.getUserList();
     }
 
     public boolean isValidUser(User user) {
         boolean isValidUser = false;
-        User retrievedUser = userDao.getUserById(user.getId());
+        User retrievedUser = studentDao.getUserById(user.getId());
         if (retrievedUser != null && user.getPassword().equals(retrievedUser.getPassword())) {
             isValidUser = true;
         }
         return isValidUser;
     }
+
+   public boolean isEmailAlreadyRegistered(String email){
+      return studentDao.isEmailAlreadyRegistered(email);
+   }
+
 }

@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : research-content-manager:research-content-manager-war : research-content-manager-war-1.0.war (exploded)">
+    <output-path>$PROJECT_DIR$/build/classes/artifacts/research-content-manager-war/research-content-manager-war-1.0</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="research-content-manager-war/web/Web Gradle : research-content-manager-war-1.0.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="research-content-manager-war" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: jsf-api-2.1.7" />
+          <element id="library" level="project" name="Gradle: jsf-impl-2.1.7" />
+          <element id="library" level="project" name="Gradle: primefaces-5.0" />
+          <element id="library" level="project" name="Gradle: cruze-1.0.8" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/build/classes/artifacts/research-content-manager-war/research-content-manager-war-1.0/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

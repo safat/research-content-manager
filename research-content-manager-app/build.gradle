@@ -1,7 +1,5 @@
 apply plugin: 'ear'
 
-
-
 dependencies {
     deploy project(path: ':research-content-manager-war', configuration: 'archives')
     deploy project(path: ':research-content-manager-ejb', configuration: 'archives')

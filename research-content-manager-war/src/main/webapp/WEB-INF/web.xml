@@ -12,6 +12,7 @@
        It acts as central controller.
        This servlet initializes the JSF components before the JSP is displayed.
     -->
+
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>

@@ -10,8 +10,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/research-content-manager-app" />
-            <option value="$PROJECT_DIR$/research-content-manger-ejb" />
-            <option value="$PROJECT_DIR$/ressearch-content-manger-war" />
+            <option value="$PROJECT_DIR$/research-content-manager-ejb" />
+            <option value="$PROJECT_DIR$/research-content-manager-war" />
           </set>
         </option>
       </GradleProjectSettings>

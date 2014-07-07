@@ -1,5 +1,6 @@
 package net.therap.dao;
 
+import net.therap.domain.Student;
 import net.therap.domain.User;
 
 import javax.ejb.Local;
@@ -13,7 +14,12 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 @Local
-public interface UserDao {
+public interface StudentDao {
     public List getUserList();
+
     public User getUserById(int id);
+
+    boolean isEmailAlreadyRegistered(String email);
+
+    void addStudent(Student student);
 }

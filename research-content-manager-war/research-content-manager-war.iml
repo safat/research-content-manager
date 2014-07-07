@@ -15,17 +15,17 @@
         </sourceRoots>
       </configuration>
     </facet>
-    <facet type="web" name="Web Gradle : ressearch-content-manger-war-1.0.war">
+    <facet type="web" name="Web Gradle : research-content-manager-war-1.0.war">
       <configuration>
         <descriptors>
-          <deploymentDescriptor name="web.xml" url="$MODULE_DIR$/../ressearch-content-manger-war/src/main/webapp/WEB-INF/web.xml" />
+          <deploymentDescriptor name="web.xml" url="$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
         </descriptors>
         <webroots>
-          <root url="file://$MODULE_DIR$/../ressearch-content-manger-war/src/main/webapp" relative="/" />
+          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
         <sourceRoots>
-          <root url="file://$MODULE_DIR$/../ressearch-content-manger-war/src/main/java" />
-          <root url="file://$MODULE_DIR$/../ressearch-content-manger-war/src/main/resources" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+          <root url="file://$MODULE_DIR$/src/main/java" />
         </sourceRoots>
       </configuration>
     </facet>
@@ -36,8 +36,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/../ressearch-content-manger-war/src/test/resources" type="java-test-resource" />
-      <excludeFolder url="file://$MODULE_DIR$/../ressearch-content-manger-war/.gradle" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -48,6 +48,8 @@
     <orderEntry type="library" exported="" name="Gradle: ejb-api-3.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jsf-api-2.1.7" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jsf-impl-2.1.7" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: primefaces-5.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: cruze-1.0.8" level="project" />
   </component>
 </module>
 

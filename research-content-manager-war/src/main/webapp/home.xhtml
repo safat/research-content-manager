@@ -6,17 +6,22 @@
 </ui:repeat>
 
 <h:form>
-    <h:commandLink action="#{navigationAction.showPage}" value="Page1">
-        <f:param name="pageId" value="1" />
+
+    <h:commandLink action="#{navigationAction.showPage('registration')}" value="registration">
     </h:commandLink>
     <br></br>
-    <h:commandLink action="#{navigationAction.showPage}" value="Page2">
-        <f:param name="pageId" value="2" />
+
+    <h:commandLink action="#{navigationAction.showPage('page1')}" value="Page1">
     </h:commandLink>
     <br></br>
-    <h:commandLink action="#{navigationAction.showPage}" value="Home">
-        <f:param name="pageId" value="3" />
+
+    <h:commandLink action="#{navigationAction.showPage('page2')}" value="Page2">
     </h:commandLink>
+    <br></br>
+
+    <h:commandLink action="#{navigationAction.showPage('home')}" value="Home">
+    </h:commandLink>
+
 </h:form>
 
 </html>
