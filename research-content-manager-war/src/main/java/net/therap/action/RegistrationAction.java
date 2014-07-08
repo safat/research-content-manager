@@ -2,6 +2,8 @@ package net.therap.action;
 
 import net.therap.domain.Student;
 import net.therap.service.StudentService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
@@ -20,16 +22,19 @@ public class RegistrationAction implements Serializable {
     private StudentService studentService;
     private Student student;
 
+    private Logger logger = LoggerFactory.getLogger(RegistrationAction.class);
+
     @PostConstruct
     public void startUp() {
        student = new Student();
+
     }
 
     public String registerStudent() {
-        studentService.addStudent(student);
+        logger.info("Registration request from "+student.getEmail());
+//        studentService.addStudent(student);
         return "registrationSuccess?faces-redirect=true";
-
-    }
+   }
 
     public Student getStudent() {
         return student;

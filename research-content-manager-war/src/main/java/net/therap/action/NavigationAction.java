@@ -13,6 +13,6 @@ import java.io.Serializable;
 public class NavigationAction implements Serializable {
 
     public String showPage(String page) {
-        return page;
+        return page+"?faces-redirect=true";
     }
 }

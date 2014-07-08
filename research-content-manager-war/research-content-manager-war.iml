@@ -50,6 +50,10 @@
     <orderEntry type="library" exported="" name="Gradle: jsf-impl-2.1.7" level="project" />
     <orderEntry type="library" exported="" name="Gradle: primefaces-5.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: cruze-1.0.8" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: slf4j-api-1.7.7" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: slf4j-simple-1.7.7" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: logback-core-1.1.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: logback-classic-1.1.2" level="project" />
   </component>
 </module>
 
