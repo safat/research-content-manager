@@ -1,6 +1,7 @@
 package net.therap.dao;
 
 import net.therap.domain.Project;
+import net.therap.domain.Supervisor;
 
 import javax.ejb.Local;
 import java.util.Collection;
@@ -15,4 +16,5 @@ import java.util.Collection;
 @Local
 public interface SupervisorDao {
     public Collection<Project> getProjectListBySupervisorId(int supervisorId);
+    public Supervisor getSupervisorByEmail(String email);
 }

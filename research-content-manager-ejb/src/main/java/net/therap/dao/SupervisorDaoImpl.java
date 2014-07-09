@@ -32,4 +32,11 @@ public class SupervisorDaoImpl implements SupervisorDao {
         Supervisor supervisor = (Supervisor) query.getSingleResult();
         return supervisor.getProjectList();
     }
+
+    @Override
+    public Supervisor getSupervisorByEmail(String email) {
+        Query query = entityManager.createQuery("FROM Supervisor supervisor  WHERE supervisor.email = :email", Supervisor.class);
+        query.setParameter("email", email);
+
+    }
 }

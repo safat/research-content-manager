@@ -7,6 +7,11 @@
     <link rel="stylesheet" type="text/css" href="resources/css/main.css"/>
 </h:head>
 <h:body>
+     <h:form>
+        Email : <h:inputText value="#{login.supervisor.email}"/>
+        Password : <h:inputSecret value="#{login.supervisor.password}"/>
+        <h:commandButton action="#{login.login}" value="login"/>
+    </h:form>
 
 </h:body>
 

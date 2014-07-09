@@ -2,6 +2,7 @@ package net.therap.service;
 
 import net.therap.dao.SupervisorDao;
 import net.therap.domain.Project;
+import net.therap.domain.Supervisor;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
@@ -22,5 +23,9 @@ public class SupervisorService {
 
     public Collection<Project> getProjectListBySupervisorId(int supervisorId){
       return supervisorDao.getProjectListBySupervisorId(supervisorId);
+    }
+
+    public Supervisor verifyAndGetSupervisor(Supervisor supervisor){
+        Supervisor supervisor = supervisorDao.getSupervisorByEmail(supervisor.getEmail());
     }
 }
