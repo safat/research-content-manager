@@ -1,27 +1,34 @@
-<html xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:f="http://java.sun.com/jsf/core">
+<html xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
 
-<ui:repeat varStatus="status" var="topic" value="#{homeAction.researchTopicList}">
-    #{status.index + 1} : #{topic}<br/>
-</ui:repeat>
+<h:head>
+    <link rel="stylesheet" type="text/css" href="resources/css/main.css" />
 
-<h:form>
+</h:head>
 
-    <h:commandLink action="#{navigationAction.showPage('registration')}" value="registration">
-    </h:commandLink>
+<h:body styleClass="body">
+
+    <h:form>
+        <h:commandLink action="#{navigationAction.showPage('registration')}" value="registration"/> <br></br>
+        <h:commandLink action="#{navigationAction.showPage('login')}" value="login"/>
+    </h:form>
+
     <br></br>
 
-    <h:commandLink action="#{navigationAction.showPage('page1')}" value="Page1">
-    </h:commandLink>
-    <br></br>
+    <h:outputText value="Current Research Going On" styleClass="title"></h:outputText>
+    <hr></hr>
+    <h:form id="researchAreas">
+        <p:accordionPanel multiple="true" value="#{homeAction.researchAreaList}" var="researchArea" activeIndex="0">
+            <p:tab title="#{researchArea.title}">
+                <h:panelGrid columns="2" cellpadding="10">
+                    <h:outputText value="#{researchArea.description}"/>
+                </h:panelGrid>
+            </p:tab>
+        </p:accordionPanel>
 
-    <h:commandLink action="#{navigationAction.showPage('page2')}" value="Page2">
-    </h:commandLink>
-    <br></br>
-
-    <h:commandLink action="#{navigationAction.showPage('home')}" value="Home">
-    </h:commandLink>
-
-</h:form>
+    </h:form>
+</h:body>
 
 </html>
