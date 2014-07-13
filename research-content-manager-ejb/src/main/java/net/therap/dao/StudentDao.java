@@ -22,4 +22,6 @@ public interface StudentDao {
     boolean isEmailAlreadyRegistered(String email);
 
     void addStudent(Student student);
+
+    public Student getStudentByEmail(String email);
 }

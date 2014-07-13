@@ -3,13 +3,11 @@ package net.therap.dao;
 import net.therap.domain.Student;
 import net.therap.domain.Supervisor;
 import net.therap.domain.User;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.ejb.Stateless;
-import javax.ejb.TransactionManagement;
-import javax.ejb.TransactionManagementType;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
+import javax.persistence.*;
 import java.util.List;
 
 /**
@@ -20,8 +18,9 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 @Stateless
-@TransactionManagement(value = TransactionManagementType.CONTAINER)
 public class StudentDaoImpl implements StudentDao {
+
+    private Logger logger = LoggerFactory.getLogger(StudentDaoImpl.class);
 
     @PersistenceContext
     EntityManager entityManager;
@@ -48,5 +47,21 @@ public class StudentDaoImpl implements StudentDao {
     public void addStudent(Student student) {
         entityManager.persist(student);
         entityManager.flush();
+    }
+
+    @Override
+    public Student getStudentByEmail(String email) {
+        Student student;
+
+        TypedQuery<Student> query = entityManager.createQuery("FROM Student student  WHERE student.email = :email ", Student.class);
+        query.setParameter("email", email);
+
+        try {
+            student = query.getSingleResult();
+        }catch (NoResultException |NonUniqueResultException exp){
+            logger.info("student not found "+email);
+            return null;
+        }
+        return student;
     }
 }

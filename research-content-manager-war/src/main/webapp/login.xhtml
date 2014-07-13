@@ -6,11 +6,26 @@
 <h:head>
     <link rel="stylesheet" type="text/css" href="resources/css/main.css"/>
 </h:head>
-<h:body>
-     <h:form>
-        Email : <h:inputText value="#{login.supervisor.email}"/>
-        Password : <h:inputSecret value="#{login.supervisor.password}"/>
-        <h:commandButton action="#{login.login}" value="login"/>
+<h:body styleClass="body">
+    <h:form>
+        <fieldset>
+            <legend>Login</legend>
+
+           <h:panelGrid id="loginPanel" columns="2" >
+                <h:outputText value="Email"></h:outputText>
+                <h:inputText value="#{loginAction.student.email}"/>
+
+                <h:outputText value="Password"></h:outputText>
+                <h:inputSecret value="#{loginAction.student.password}"/>
+
+                <h:commandButton type="submit" action="#{loginAction.login}" value="login"/>
+                <h:outputText></h:outputText>
+
+                <h:link value="Register" outcome="registration" />
+
+           </h:panelGrid>
+
+        </fieldset>
     </h:form>
 
 </h:body>

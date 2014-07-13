@@ -26,6 +26,6 @@ public class SupervisorService {
     }
 
     public Supervisor verifyAndGetSupervisor(Supervisor supervisor){
-        Supervisor supervisor = supervisorDao.getSupervisorByEmail(supervisor.getEmail());
+        return supervisorDao.getSupervisorByEmail(supervisor.getEmail());
     }
 }

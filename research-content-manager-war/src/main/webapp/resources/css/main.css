@@ -21,6 +21,21 @@
     font-size:32px
 }
 .title{
-    color: royalblue;
+    color: #008be1;
     font-size: 22;
+}
+
+fieldset {
+    border:2px solid  #008be1;
+    padding: 20px;
+    margin-right: 100px;
+    margin-top: 150px;
+}
+
+legend {
+    padding: 0.2em 0.5em;
+    border:2px solid #008be1;;
+    color:slategray;
+    font-size:90%;
+    text-align:right;
 }

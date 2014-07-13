@@ -2,13 +2,13 @@ package net.therap.dao;
 
 import net.therap.domain.Project;
 import net.therap.domain.Supervisor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.ejb.Stateless;
 import javax.ejb.TransactionManagement;
 import javax.ejb.TransactionManagementType;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
+import javax.persistence.*;
 import java.util.Collection;
 
 /**
@@ -24,6 +24,7 @@ import java.util.Collection;
 public class SupervisorDaoImpl implements SupervisorDao {
     @PersistenceContext
     private EntityManager entityManager;
+    private Logger logger = LoggerFactory.getLogger(SupervisorDaoImpl.class);
 
     @Override
     public Collection<Project> getProjectListBySupervisorId(int supervisorId) {
@@ -35,8 +36,17 @@ public class SupervisorDaoImpl implements SupervisorDao {
 
     @Override
     public Supervisor getSupervisorByEmail(String email) {
-        Query query = entityManager.createQuery("FROM Supervisor supervisor  WHERE supervisor.email = :email", Supervisor.class);
+        Supervisor supervisor = null;
+
+        TypedQuery<Supervisor> query = entityManager.createQuery("FROM Supervisor supervisor  WHERE supervisor.email = :email ", Supervisor.class);
         query.setParameter("email", email);
 
+        try {
+            supervisor = query.getSingleResult();
+        }catch (NoResultException|NonUniqueResultException exp){
+            logger.debug("supervisor not found "+email);
+            return null;
+        }
+       return supervisor;
     }
 }

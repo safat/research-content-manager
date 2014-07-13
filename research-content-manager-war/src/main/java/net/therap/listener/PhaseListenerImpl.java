@@ -39,7 +39,7 @@ public class PhaseListenerImpl implements PhaseListener {
             printComponentTree(rootComponent);
         }
 
-       componentTreeStr.append("\n\n#END PHASE ---------------------"+phaseEvent.getPhaseId()+"-----------------\n\n");
+       logger.info("\n\n#END PHASE ---------------------"+phaseEvent.getPhaseId()+"-----------------\n\n");
        logger.info(componentTreeStr.toString());
     }
 

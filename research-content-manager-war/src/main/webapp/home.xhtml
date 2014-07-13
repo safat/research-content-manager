@@ -11,8 +11,8 @@
 <h:body styleClass="body">
 
     <h:form>
-        <h:commandLink action="#{navigationAction.showPage('registration')}" value="registration"/> <br></br>
-        <h:commandLink action="#{navigationAction.showPage('login')}" value="login"/>
+        <h:outputText value="#{loginAction.student.firstName} #{loginAction.student.lastName}"></h:outputText>
+        <h:commandLink action="#{logoutAction.logout}" value="(logout)"/> <br></br>
     </h:form>
 
     <br></br>

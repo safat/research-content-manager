@@ -11,11 +11,9 @@
 </h:head>
 
 <h:body styleClass="body">
-
-    <h:outputText value="Student Registration" styleClass="header"></h:outputText>
-
-    <hr></hr>
-    <h:form>
+  <h:form>
+        <fieldset>
+        <legend>Student Registration</legend>
 
         <h:panelGrid columns="3">
 
@@ -78,6 +76,7 @@
                              action="#{registration.registerStudent}"></h:commandButton>
 
         </h:panelGrid>
+        </fieldset>
     </h:form>
 
 </h:body>
