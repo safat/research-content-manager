@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+<h:body>
+
+    JMS Message PTP Message
+    <h:form>
+        <h:outputLabel value="Message: " for="email"/>
+        <h:inputText id="email" value="#{messageProducerBean.email}"/>
+        <h:commandButton value="Send Message" action="#{messageProducerBean.send}"/>
+        <h:messages globalOnly="true"/>
+    </h:form>
+    <br></br>
+    JMS topic email
+    <h:form>
+        <h:outputLabel value="Message: " for="email"/>
+        <h:inputText value="#{topicPublish.message}"></h:inputText>
+        <h:commandButton value="Send Message" action="#{topicPublish.publishNews}"/>
+        <h:messages globalOnly="true"/>
+    </h:form>
+
+</h:body>
+
+</html>

@@ -25,7 +25,7 @@ public class PhaseListenerImpl implements PhaseListener {
     @Override
     public void beforePhase(PhaseEvent phaseEvent) {
         componentTreeStr = new StringBuilder();
-        logger.info("\n\n#STARTING PHASE ----------------"+phaseEvent.getPhaseId()+"------------------\n\n");
+       // logger.info("\n\n#STARTING PHASE ----------------"+phaseEvent.getPhaseId()+"------------------\n\n");
 
         rootComponent = FacesContext.getCurrentInstance().getViewRoot();
 
@@ -39,8 +39,8 @@ public class PhaseListenerImpl implements PhaseListener {
             printComponentTree(rootComponent);
         }
 
-       logger.info("\n\n#END PHASE ---------------------"+phaseEvent.getPhaseId()+"-----------------\n\n");
-       logger.info(componentTreeStr.toString());
+       //logger.info("\n\n#END PHASE ---------------------"+phaseEvent.getPhaseId()+"-----------------\n\n");
+      // logger.info(componentTreeStr.toString());
     }
 
     @Override

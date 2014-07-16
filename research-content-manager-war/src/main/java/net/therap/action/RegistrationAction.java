@@ -1,6 +1,7 @@
 package net.therap.action;
 
 import net.therap.domain.Student;
+import net.therap.service.EmailConfirmationQueueProducer;
 import net.therap.service.StudentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,23 +20,27 @@ import java.io.Serializable;
 @ManagedBean (name = "registration")
 @ViewScoped
 public class RegistrationAction implements Serializable {
+    private Logger logger = LoggerFactory.getLogger(RegistrationAction.class);
+
     @EJB
     private StudentService studentService;
-    private Student student;
+    @EJB
+    private EmailConfirmationQueueProducer emailConfirmationQueue;
 
-    private Logger logger = LoggerFactory.getLogger(RegistrationAction.class);
+    private Student student;
 
     @PostConstruct
     public void initBean() {
-       logger.info("\n\n______________________RegistrationAction Bean Constructed____________________________\n\n") ;
-       student = new Student();
+        logger.info("\n\n______________________RegistrationAction Bean Constructed____________________________\n\n");
+        student = new Student();
     }
 
     public String registerStudent() {
-        logger.info("Registration request from "+student.getEmail());
+        logger.info("Registration request from " + student.getEmail());
+        emailConfirmationQueue.queueEmailConfirmation(student.getEmail());
 //        studentService.addStudent(student);
         return "registrationSuccess?faces-redirect=true";
-   }
+    }
 
     public Student getStudent() {
         return student;
@@ -46,7 +51,7 @@ public class RegistrationAction implements Serializable {
     }
 
     @PreDestroy
-    public void destroy(){
+    public void destroy() {
         logger.info("\n\n_____________________RegistrationAction Bean destroyed____________________________\n\n");
     }
 }

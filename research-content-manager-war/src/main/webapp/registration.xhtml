@@ -22,7 +22,7 @@
                          required="true" requiredMessage="Please Enter first name!">
                 <p:ajax update="msgFirstName" partialSubmit="true" event="keyup"></p:ajax>
             </h:inputText>
-            <h:message id="msgFirstName" for="firstName" errorClass="errorMessage" infoClass="infoMessage"></h:message>
+            <h:email id="msgFirstName" for="firstName" errorClass="errorMessage" infoClass="infoMessage"></h:email>
 
 
             <h:outputText value="Last Name :"></h:outputText>
@@ -30,7 +30,7 @@
                          required="true" requiredMessage="Please Enter Last Name!">
                 <p:ajax update="msgLastName" partialSubmit="true" event="keyup"></p:ajax>
             </h:inputText>
-            <h:message id="msgLastName" for="lastName" errorClass="errorMessage" infoClass="infoMessage"></h:message>
+            <h:email id="msgLastName" for="lastName" errorClass="errorMessage" infoClass="infoMessage"></h:email>
 
 
             <h:outputText value="Password :"></h:outputText>
@@ -40,7 +40,7 @@
                 <f:validateLength minimum="6"> </f:validateLength>
                 <p:ajax update="msgPassword" partialSubmit="true" event="keyup"></p:ajax>
             </h:inputSecret>
-            <h:message id="msgPassword" for="password" errorClass="errorMessage" infoClass="infoMessage"></h:message>
+            <h:email id="msgPassword" for="password" errorClass="errorMessage" infoClass="infoMessage"></h:email>
 
 
             <h:outputText value="Date of Birth :"></h:outputText>
@@ -51,7 +51,7 @@
             <h:inputText id="email" value="#{registration.student.email}" required="true"
                          validator="#{emailValidator.validate}">
             </h:inputText>
-            <h:message id="msgEmail" for="email" errorClass="errorMessage" infoClass="infoMessage"> </h:message>
+            <h:email id="msgEmail" for="email" errorClass="errorMessage" infoClass="infoMessage"> </h:email>
 
 
             <h:outputText value="I am"></h:outputText>
