@@ -66,11 +66,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EmailConfirmationQueueProducer.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="EmailConfirmationQueueProducer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/research-content-manager-ejb/src/main/java/net/therap/service/EmailConfirmationQueueProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6651885" vertical-offset="180" max-vertical-offset="810">
-              <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="810">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -96,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmailConfirmationListener.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="EmailConfirmationListener.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/research-content-manager-ejb/src/main/java/net/therap/service/EmailConfirmationListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="274" max-vertical-offset="735">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.60088694" vertical-offset="149" max-vertical-offset="600">
+              <caret line="37" column="77" selection-start-line="37" selection-start-column="77" selection-end-line="37" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -724,10 +724,10 @@
         <option value="$PROJECT_DIR$/research-content-manager-war/src/main/webapp/index.xhtml" />
         <option value="$PROJECT_DIR$/research-content-manager-war/src/main/java/net/therap/action/RegistrationAction.java" />
         <option value="$PROJECT_DIR$/research-content-manager-ejb/src/main/java/net/therap/service/EmailService.java" />
-        <option value="$PROJECT_DIR$/research-content-manager-ejb/src/main/java/net/therap/service/EmailConfirmationListener.java" />
         <option value="$PROJECT_DIR$/research-content-manager-ejb/src/main/java/net/therap/service/EmailConfirmationQueue.java" />
         <option value="$PROJECT_DIR$/research-content-manager-ejb/src/main/java/net/therap/service/TopicPublisherBean.java" />
         <option value="$PROJECT_DIR$/research-content-manager-ejb/src/main/java/net/therap/service/EmailConfirmationQueueProducer.java" />
+        <option value="$PROJECT_DIR$/research-content-manager-ejb/src/main/java/net/therap/service/EmailConfirmationListener.java" />
       </list>
     </option>
   </component>
@@ -1508,12 +1508,12 @@
       <workItem from="1405219535945" duration="4413000" />
       <workItem from="1405307516208" duration="12874000" />
       <workItem from="1405393948321" duration="14752000" />
-      <workItem from="1405480615783" duration="1908000" />
+      <workItem from="1405480615783" duration="2458000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185165000" />
+    <option name="totallyTimeSpent" value="185715000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1961,14 +1961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/research-content-manager-ejb/src/main/java/net/therap/service/EmailConfirmationListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="274" max-vertical-offset="735">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax/javaee-api/6.0/d6f416983ea13c334d5c599a9045414ecaf5d66d/javaee-api-6.0.jar!/javax/jms/Session.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="1140">
@@ -1979,8 +1971,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/research-content-manager-ejb/src/main/java/net/therap/service/EmailConfirmationQueueProducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6651885" vertical-offset="180" max-vertical-offset="810">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="810">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/research-content-manager-ejb/src/main/java/net/therap/service/EmailConfirmationListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60088694" vertical-offset="149" max-vertical-offset="600">
+          <caret line="37" column="77" selection-start-line="37" selection-start-column="77" selection-end-line="37" selection-end-column="77" />
           <folding />
         </state>
       </provider>

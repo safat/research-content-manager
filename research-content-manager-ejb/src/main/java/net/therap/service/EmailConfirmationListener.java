@@ -24,7 +24,7 @@ import javax.jms.TextMessage;
                         propertyValue = "javax.jms.Queue")
         })
 public class EmailConfirmationListener implements MessageListener {
-    private Logger logger = LoggerFactory.getLogger(EmailConfirmationListener.class);
+    private Logger log = LoggerFactory.getLogger(EmailConfirmationListener.class);
 
     @EJB
     private EmailService emailService;
@@ -35,7 +35,7 @@ public class EmailConfirmationListener implements MessageListener {
             String recipientEmail = textMessage.getText();
             emailService.sendConfirmationEmail(recipientEmail);
 
-            logger.info("\nemail popped from queue to send confirmation email" + recipientEmail + "\n");
+            log.info("email popped from queue and confirmation email sent to {}", recipientEmail);
         } catch (JMSException e) {
             e.printStackTrace();
         }
