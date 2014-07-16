@@ -32,7 +32,6 @@ public class EmailConfirmationQueueProducer {
             textMessage = session.createTextMessage();
             textMessage.setText(recipientEmail);
 
-
             messageProducer.send(textMessage);
         } catch (JMSException e) {
             e.printStackTrace();
