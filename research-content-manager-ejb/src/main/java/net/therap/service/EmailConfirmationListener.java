@@ -35,7 +35,7 @@ public class EmailConfirmationListener implements MessageListener {
             String recipientEmail = textMessage.getText();
             emailService.sendConfirmationEmail(recipientEmail);
 
-            log.info("email popped from queue and confirmation email sent to {}", recipientEmail);
+            log.info("email popped from queue and confirmation email and sent to {}", recipientEmail);
         } catch (JMSException e) {
             e.printStackTrace();
         }
